@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    /* change according to your game */
+    height: 100vh;
+    /* change according to your game */
+    /* border: 1px solid white; */
+}
+
+#character {
+    width: 240px;
+    height: 240px;
+    background-image: url("../images/frontsitting.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 466px;
+}
+
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#block {
+    width: 100px;
+    height: 130px;
+    background-image: url("../images/pizzabomb.png");
+    background-size: cover;
+    /* somehow need to something else instaead of just a filled block. */
+    position: relative;
+    top: 130px;
+    left: 100%;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -10%;
+    }
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/Environment_Recoveredcopy.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* add styles for other HTML elements of your game */

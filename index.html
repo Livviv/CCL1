@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astrocat's Hunger Quest Gamee</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <!-- further HTML elements, that should maybe be displayed above your game. E.g. Healtbar, .... -->
+ <!--  <div id="hungerbarDisplay">Hunger:</div> -->
+  <div id="gameContainer">
+    <!-- further HTML elements, that should be behind your game. e.g. Background image, .... -->
+    <div id="background"></div>
+    <canvas id="canvas"></canvas> <!-- change the size attributes of your canvas according to your game -->
+      <div id="character"></div>
+    <div id="block"></div>
+    <!-- further HTML elements, that should overlay your game. e.g. Main Screen, Game Over screen, .... -->
+    <!-- <div id="gameOverScreen"></div> -->
+    <!-- <div id="mainScreen"></div> -->
+  </div>
+  <!-- further HTML elements, that should maybe be displayed below your game. E.g. Score, .... -->
+  <!-- <div id="scoreDisplay">Score: </div> -->
+
+  <script type="module" src="./scripts/modules/global.js"></script>
+  <script type="module" src="./scripts/modules/input.js"></script>
+  <script type="module" src="./scripts/modules/main.js"></script>
+  
+</body>
+<!-- 1. make spritesheet work, normal running, (later; and then it changing to the cat-getting-thinner-spritesheets,)
+      2.implement the food and bomb items, so that they would spawn randomly at a random place that is still reachable in the area the cat is moving in.
+      3. fix collision detection for the items,
+      4.  add spacebar and arrow up for the jumping function,
+      5.  jump the height of the time spacebar is being pressed-->
+</html>
