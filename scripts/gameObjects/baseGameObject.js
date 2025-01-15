@@ -96,8 +96,8 @@ class BaseGameObject {
                         this.physicsData.prevFallingVelocity = 0;
                         this.physicsData.jumpForceStart = 0;
                 }
-            }   
-        }    
+            }
+        }
     };
 
     setJumpForce = function (jumpForce) {

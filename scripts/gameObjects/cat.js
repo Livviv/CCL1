@@ -5,6 +5,11 @@ class Cat extends BaseGameObject {
     name = "Cat";
     xVelocity = 0;
     yVelocity = 0;
+    jumpLoading = false;
+    jumpForce = 0;
+    jumpForceIncrement = 10;
+    minJumpForce = 10;
+    maxJumpForce = 100;
     useGravityForces = true;
 
     getBoxBounds = function () {
@@ -23,7 +28,28 @@ class Cat extends BaseGameObject {
         if (this.xVelocity == 0) {
             global.playerObject.switchCurrentSprites(this.animationData.firstSpriteIndex, this.animationData.firstSpriteIndex);
         }
-    } 
+    }
+
+    startJump = function() {
+        console.log("jump started");
+        this.jumpLoading = true;
+    }
+
+    loadJump = function() {
+        console.log("loading jump");
+        this.jumpForce += this.jumpForceIncrement;
+        if (this.jumpForce > this.maxJumpForce) {
+            this.jumpForce = this.maxJumpForce;
+        }
+    }
+
+    doJump = function() {
+        console.log("jumping");
+        this.yVelocity = -this.jumpForce;
+        this.physicsData.jumpForce = this.jumpForce;
+        this.jumpForce = 0;
+        this.jumpLoading = false;
+    }
 
     /*draw = function () {
         global.ctx.fillStyle = "#000000";

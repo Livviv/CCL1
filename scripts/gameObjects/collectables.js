@@ -28,17 +28,17 @@ class BombItem extends Collectable{
 }
 
 const itemTypes = [
-    { width: 50, height: 50, src: "./images/cheese.png" },
-    { width: 50, height: 50, src: "./images/tuna.png" },
-    { width: 50, height: 50, src: "./images/bacon.png" },
-    { width: 50, height: 50, src: "./images/pizza.png" },
+    { width: 233, height: 171, src: "./images/cheese.png" },
+    { width: 231, height: 195, src: "./images/tuna.png" },
+    { width: 354, height: 166, src: "./images/bacon.png" },
+    { width: 334, height: 402, src: "./images/pizza.png" },
 ];
 
 const bombTypes = [
-    { width: 50, height: 50, src: "./images/cheesebomb.png" },
-    { width: 50, height: 50, src: "./images/tunabomb.png" },
-    { width: 50, height: 50, src: "./images/baconbomb.png" },
-    { width: 50, height: 50, src: "./images/pizzabomb.png" },
+    { width: 315, height: 172, src: "./images/cheesebomb.png" },
+    { width: 231, height: 205, src: "./images/tunabomb.png" },
+    { width: 421, height: 161, src: "./images/baconbomb.png" },
+    { width: 333, height: 430, src: "./images/pizzabomb.png" },
 ];
 
 function getRandomPosition(canvasWidth, canvasHeight, itemWidth, itemHeight) {
@@ -61,7 +61,5 @@ bombTypes.forEach(bombType => {
     let bombItem = new BombItem(position.x, position.y, bombType.width, bombType.height, bombType.src);
     collectables.push(bombItem);
 });
-
-console.log(collectables);
 
 export {collectables};

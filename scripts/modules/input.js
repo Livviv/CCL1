@@ -17,14 +17,22 @@ function move(event) {
             global.playerObject.xVelocity = -200;
             global.playerObject.yVelocity = 0;
             break; */
-        case "space": //spacebar is 32.
-            global.playerObject.setJumpForce(.8);
+        case "w": //spacebar is 32.
+            global.playerObject.startJump();
             break;
        /* case "s":
             global.playerObject.xVelocity = 0;
             global.playerObject.yVelocity = 100;
             global.playerObwject.switchCurrentSprites(3, 5);
             break; */
+    }
+}
+
+function stop(event) {
+    switch(event.key) {
+        case "w":
+            global.playerObject.doJump();
+            break;
     }
 }
 
@@ -39,7 +47,7 @@ function move(event) {
     }
 }
  */
-document.addEventListener("keypress", move);
+document.addEventListener("keydown", move);
 
 //if you just want to move as long as the player presses a key:
 document.addEventListener("keyup", stop);

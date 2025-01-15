@@ -21,9 +21,11 @@ function gameLoop(totalRunningTime) {
         }
     }
 
-    let element = document.querySelector('#block');
-    let rect = element.getBoundingClientRect();
-    console.log(rect.top, rect.right, rect.bottom, rect.left);
+    if (global.playerObject.jumpLoading) {
+        global.playerObject.loadJump();
+    }
+
+    console.log(global.playerObject.x, global.playerObject.y);
     
     requestAnimationFrame(gameLoop); // This keeps the gameLoop running indefinitely
 }
