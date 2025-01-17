@@ -21,20 +21,20 @@ function gameLoop(totalRunningTime) {
         }
     }
 
-    if (global.playerObject.jumpLoading) {
-        global.playerObject.loadJump();
-    }
+    // if (global.playerObject.jumpLoading) {
+    //     global.playerObject.loadJump();
+    // }
 
-    console.log(global.playerObject.x, global.playerObject.y);
+    //console.log(global.playerObject.x, global.playerObject.y);
     
     requestAnimationFrame(gameLoop); // This keeps the gameLoop running indefinitely
 }
 
 function setupGame() {
-    global.playerObject = new Cat(300, 0, 64, 64);
+    global.playerObject = new Cat(300, 100, 100, 100);
     global.leftMoveTrigger = new MoveTrigger(100, 100, 20, 900, 100);
     global.rightMoveTrigger = new MoveTrigger(800, 100, 20, 900, -100);
-    new Floor(0, 400, 9000, 40);
+    new Floor(0, 695, 9000, 40);
     //new BlockObject(200, 280, 50, 50);
     //new BlockObject(300, 400, 50, 50);
     // setup your game here - means: Create instances of the GameObjects that belong to your game.

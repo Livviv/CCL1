@@ -8,7 +8,7 @@ global.allGameObjects = [];
 global.playerObject = {};
 global.backgroundShift = 0;
 global.backgroundMaxShift = -600;
-global.gravityForce = 9.8;
+global.gravityForce = 9.81;
 global.pixelToMeter = 100;
 
 global.rightMoveTrigger;

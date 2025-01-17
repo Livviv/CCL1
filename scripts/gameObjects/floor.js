@@ -9,6 +9,7 @@ class Floor extends BaseGameObject {
 
 
     draw = function () {
+
     }
     
     constructor (x, y, width, height) {

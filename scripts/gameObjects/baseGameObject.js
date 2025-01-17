@@ -3,8 +3,8 @@ import { global } from "../modules/global.js"
 class BaseGameObject {
     active = true;
     name = "";
-    x = 100;
-    y = 500;
+    x;
+    y;
     previousX = 0;
     previousY = 0;
     width = 50;
@@ -13,7 +13,7 @@ class BaseGameObject {
     blockGravityForces = false;
     prevFallingVelocity = 0;
     index = -1;
-
+//wrong version
     physicsData = {
         "fallVelocity": 0,
         "terminalVelocity": 53,
