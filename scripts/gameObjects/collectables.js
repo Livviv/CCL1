@@ -1,18 +1,10 @@
 import { BaseGameObject } from "./baseGameObject.js";
 import { global } from "../modules/global.js";
 
-class Collectable {
-    constructor(x, y, width, height, imageSrc) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
-        this.image = new Image();
-        this.image.src = imageSrc;
-    }
-
-    draw(ctx) {
-        ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+class Collectable extends BaseGameObject {
+    constructor(x, y, width, height, imageSrc) { // x velocity try.out // also make a constructor for collectables //collectables not in html
+        super(x, y, width, height);
+        this.loadImagesFromSpritesheet(imageSrc, 1, 1);
     }
 }
 
@@ -47,19 +39,19 @@ function getRandomPosition(canvasWidth, canvasHeight, itemWidth, itemHeight) {
     return { x, y };
 }
 
-const collectables = [];
+const collectables = []; //make them not spawning on top of each other.
 
-itemTypes.forEach(itemType => {
-    let position = getRandomPosition(global.canvas.width, global.canvas.height, itemType.width, itemType.height);
-    let foodItem = new FoodItem(position.x, position.y, itemType.width, itemType.height, itemType.src);
-    collectables.push(foodItem);
+// itemTypes.forEach(itemType => {
+//     let position = getRandomPosition(global.canvas.width, global.canvas.height, itemType.width, itemType.height);
+//     let foodItem = new FoodItem(position.x, position.y, itemType.width, itemType.height, itemType.src);
+//     collectables.push(foodItem);
 
-});
+// });
 
-bombTypes.forEach(bombType => {
-    let position = getRandomPosition(global.canvas.width, global.canvas.height, bombType.width, bombType.height);
-    let bombItem = new BombItem(position.x, position.y, bombType.width, bombType.height, bombType.src);
-    collectables.push(bombItem);
-});
+// bombTypes.forEach(bombType => {
+//     let position = getRandomPosition(global.canvas.width, global.canvas.height, bombType.width, bombType.height);
+//     let bombItem = new BombItem(position.x, position.y, bombType.width, bombType.height, bombType.src);
+//     collectables.push(bombItem);
+// });
 
 export {collectables};
