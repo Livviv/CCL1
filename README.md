@@ -13,7 +13,7 @@ How long can you survive and how much food can you gather?
 + Easy Controls: controls that make jumping depending on the duration the key is pressed.
 
 ## How to Play
-* [Click here to play the game!](https://your-github-username.github.io/repository-name)
+* [Click here to play the game!](https://livviv.github.io/ccl1)
 * Move & Jump: Use w, arrow up key, or spacebar to jump.
 * Collect Food: Eat as much food as possible to keep your cat chonky and increase your score.
 * Avoid Explosives: Some food is actually a bomb in disguise.
@@ -38,22 +38,24 @@ Below are the sprites used to create the character:
 
 ### Player Character:
 <div style="text-align: center;">
-  <img src="spritesheet_all.png" alt="Player Spritesheet" width="500">
+  <img src="images/spritesheet_all.png" alt="Player Spritesheet" width="500">
   <p>*Figure 3: Player character animations.*</p>
 </div>
 
 ## Technologies Used
-Programming Language: HTML, JavaScript, CSS
-Art & Design: Photoshop
+* Programming Language: HTML, JavaScript, CSS
+* Art & Design: Photoshop
 
 ## Reflection
 
 ### What went well:
 **Design:** The game looked similar to what I have imagined and it was really fun to design the cat character and the spritesheets.
+
 **Core Mechanics:** The delayed jumping was not planned but made the game more interesting.
 
 ### Challenges:
 **Thinking like a computer:** Thinking how I could program something to get to the working code was really hard.
+
 **Time:** Dividing tasks to finish on time and implementing the different features within the time frame was not that easy troughout both weeks.
 
 ### Achievements:
