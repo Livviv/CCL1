@@ -4,7 +4,7 @@ import { displayGameOverScreen } from "../modules/main.js";
 
 class Cat extends BaseGameObject {
     name = "Cat";
-    xVelocity = 50;
+    xVelocity = 0;
     yVelocity = 0;
     jumpLoading = false;
     jumpForce = 0;
