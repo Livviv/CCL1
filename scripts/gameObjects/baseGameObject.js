@@ -13,7 +13,7 @@ class BaseGameObject {
     blockGravityForces = false;
     prevFallingVelocity = 0;
     index = -1;
-
+//wrong version
     physicsData = {
         "fallVelocity": 0,
         "terminalVelocity": 53,

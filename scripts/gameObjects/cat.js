@@ -4,7 +4,7 @@ import { displayGameOverScreen } from "../modules/main.js";
 
 class Cat extends BaseGameObject {
     name = "Cat";
-    xVelocity = 0;
+    xVelocity = 50;
     yVelocity = 0;
     jumpLoading = false;
     jumpForce = 0;
@@ -60,7 +60,7 @@ class Cat extends BaseGameObject {
         }
     }
 
-    getBoxBounds = function () {
+    getBoxBounds = function () { 
         let bounds = {
             left: this.x + 18,
             right: this.x + this.width - 22,
@@ -115,11 +115,18 @@ class Cat extends BaseGameObject {
             console.log("jump started");
             this.jumpLoading = true;
         }
+
+        if (this.jumpLoading) {
+            this.loadJump();
+        }
     }
 
     loadJump = function () {
         console.log("loading jump");
         this.jumpForce += this.jumpForceIncrement;
+        if (this.jumpForce < this.minJumpForce) {
+            this.jumpForce = this.minJumpForce;
+        }
         if (this.jumpForce > this.maxJumpForce) {
             this.jumpForce = this.maxJumpForce;
         }
