@@ -13,34 +13,48 @@ How long can you survive and how much food can you gather?
 + Easy Controls: controls that make jumping depending on the duration the key is pressed.
 
 ## How to Play
+* [Click here to play the game!](https://your-github-username.github.io/repository-name)
 * Move & Jump: Use w, arrow up key, or spacebar to jump.
 * Collect Food: Eat as much food as possible to keep your cat chonky and increase your score.
 * Avoid Explosives: Some food is actually a bomb in disguise.
 * Survive as Long as Possible: More food will appear over time and it gets more challenging.
 
+## Screenshots
+
+### Main Gameplay:
+<div style="text-align: center;">
+  <img src="images/gameplay.png" alt="Gameplay Screenshot" width="600">
+  <p>*Figure 1: Example of gameplay in action.*</p>
+</div>
+
+### Menu and UI:
+<div style="text-align: center;">
+  <img src="images/menu.png" alt="Menu UI Screenshot" width="600">
+  <p>*Figure 2: Menu and user interface.*</p>
+</div>
+
+### Spritesheets
+Below are the sprites used to create the character:
+
+### Player Character:
+<div style="text-align: center;">
+  <img src="spritesheet_all.png" alt="Player Spritesheet" width="500">
+  <p>*Figure 3: Player character animations.*</p>
+</div>
+
 ## Technologies Used
 Programming Language: HTML, JavaScript, CSS
 Art & Design: Photoshop
 
-## Contact
-Developer: Livia Gaind
-For any questions or issues, please contact [your email address].
-<!--
-## Installation
-### Requirements
-- Operating System: Windows 10
-- RAM: 4GB
-- Graphics Card: NVIDIA GeForce GTX 960
-- Additional Software: Unity 2022.3.14f1
+## Reflection
 
-## Screenshots
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/screenshot2.png)
+### What went well:
+**Design:** The game looked similar to what I have imagined and it was really fun to design the cat character and the spritesheets.
+**Core Mechanics:** The delayed jumping was not planned but made the game more interesting.
 
-## Videos
-[Game Trailer](https://www.youtube.com/watch?v=example)
+### Challenges:
+**Thinking like a computer:** Thinking how I could program something to get to the working code was really hard.
+**Time:** Dividing tasks to finish on time and implementing the different features within the time frame was not that easy troughout both weeks.
 
-## Contributing
-Contributions are welcome! Please read the [contributing guide](CONTRIBUTING.md) for details on how to contribute.
-## License
-This game is released under the MIT License.
+### Achievements:
+**Understanding:** Thinking how to program something is now easier, because I had to learn it in a short time to progress with my game. I also gained a better understanding of my code.
