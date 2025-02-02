@@ -110,6 +110,7 @@ class BaseGameObject {
     draw = function () {
         let sprite = this.getNextSprite();
         global.ctx.drawImage(sprite, this.x, this.y, this.width, this.height);
+        // global.ctx.scale(0.8,0.8);
     };
 
     getNextSprite = function () {
@@ -192,7 +193,6 @@ class BaseGameObject {
         });
     }
 
-
     switchCurrentSprites = function (firstSpriteIndex, lastSpriteIndex) {
         this.animationData.currentSpriteIndex = firstSpriteIndex;
         this.animationData.firstSpriteIndex = firstSpriteIndex;
@@ -216,4 +216,4 @@ class BaseGameObject {
 
 }
 
-export {BaseGameObject}
+export {BaseGameObject};
