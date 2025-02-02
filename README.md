@@ -13,7 +13,7 @@ How long can you survive and how much food can you gather?
 + Easy Controls: controls that make jumping depending on the duration the key is pressed.
 
 ## How to Play
-* [Click here to play the game!](https://livviv.github.io/ccl1)
+* [Click here to play the game!](https://livviv.github.io/CCL1)
 * Move & Jump: Use w, arrow up key, or spacebar to jump.
 * Collect Food: Eat as much food as possible to keep your cat chonky and increase your score.
 * Avoid Explosives: Some food is actually a bomb in disguise.
