@@ -10,7 +10,6 @@ class MoveTrigger extends BaseGameObject {
     }
 
     draw = function () {
-       //global.ctx.fillRect(this.x, this.y, this.width, this.height);
     }
 
     reactToCollision = function (collidingObject)   {
@@ -21,19 +20,19 @@ class MoveTrigger extends BaseGameObject {
             if (global.backgroundShift < global.backgroundMaxShift) {
                 global.backgroundShift = global.backgroundMaxShift;
                 collidingObject.x = collidingObject.previousX;
-                /* console.log("case a"); */
+                
             }
             else if (global.backgroundShift > 0) {
                 global.backgroundShift = 0;
                 collidingObject.x = collidingObject.previousX;
-                /* console.log("case b"); */
+                
             }
         }
     }
 
     constructor(x, y, width, height) {
         super(x, y, width, height);
-        //this.loadImages(["./images/apple.png"]);
+       
         this.backGroundDiv = document.querySelector("#background");
     }
 }

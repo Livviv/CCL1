@@ -3,20 +3,20 @@ create skeleton/structure for programming the game,
 adjust collectable items and spritesheets to the code,
 start programming
 
-Day2 / 14.01.25:
+14.01.25:
 The playable character and the collectable items now appear on the screen, collectables also have the right direction, where they're moving to.,
 food items (and bomb items) now either give you an amount of hunger (currently it's under "health") or take that amount. should also now spawn randomly after fixing the widths and heights of each item.,
 adjusted background to the right size.
 
-Day3 / 15.01.25:
+15.01.25:
 make the jump work on spacebar and case w, adjusted jumpForce, jumpLoading and loadJump, 
 the foodItems and bombItems were adjusted in height and width. 
 
-Day4 / 16.01.25:
+16.01.25:
 cleaning up code, repaired jump, spritesheet, canvas, removed elements in index.html because they would later be a problem, 
 Collectables didn't appear randomly and were called in html: now they are spawning randomly once. (need them to spawn endlessly, not once).
 
-Day5 / 17.01.25:
+17.01.25:
 Cat now doesn't jump over the canvas, tried to find bugs and debug my code, also clean up code I don't need anymore and was already commented out.
 
 19.01.25:

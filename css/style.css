@@ -39,9 +39,8 @@ body {
     width: 400px;
     height: auto;   
     z-index: 15;
-
-    /* list-style-image: url("Hungerbar.png"); */
 }
+
 #hungerDisplay {
     position: absolute;
     top: 0;
@@ -117,14 +116,8 @@ body {
     justify-content: center;
     background-size: cover;
     position: absolute;
-    /* bottom: 243px;   */
     z-index: 25;
     border: none;
     bottom: 240px;
     left: 300px;
-    
-   /*  cursor: pointer;  */
-    /* border-radius: 5px;  */
-    /* padding: 10px ; */
-    
 }

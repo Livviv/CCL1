@@ -75,8 +75,7 @@ class Cat extends BaseGameObject {
         this.x += this.xVelocity * global.deltaTime;
         this.y += this.yVelocity * global.deltaTime;
         if (this.xVelocity == 0) {
-    /* global.playerObject.switchCurrentSprites(this.animationData.firstSpriteIndex, this.animationData.firstSpriteIndex);
-         */}
+   }
 
         if (this.jumpLoading) {
             this.loadJump();
@@ -130,15 +129,12 @@ class Cat extends BaseGameObject {
         if (this.jumpForce > this.maxJumpForce) {
             this.jumpForce = this.maxJumpForce;
         }
-        /*   if (this.jumpForce > this.maxJumpForce) {
-          this.jumpForce = this.maxJumpForce;
-      } */
     }
 
     doJump = function () {
         console.log("jumping");
         console.log(this.jumpForce);
-        //this.yVelocity = -this.jumpForce;
+        
         this.setJumpForce(this.jumpForce);
         this.jumpForce = 0;
         this.jumpLoading = false;

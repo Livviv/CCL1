@@ -15,7 +15,7 @@ function resetGlobals() {
 global.canvas = document.querySelector("#canvas");
 global.ctx = canvas.getContext("2d");
 global.prevTotalRunningTime = 0;
-global.background = document.querySelector("#background"); // Initialize the background element for the game
+global.background = document.querySelector("#background"); 
 resetGlobals();
 
 global.getCanvasBounds = function () {

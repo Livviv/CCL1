@@ -11,11 +11,6 @@ class BlockObject extends BaseGameObject {
             collidingObject.y = collidingObject.previousY;
         }
     }
-
-    /* constructor (x, y, width, height) {
-        super(x, y, width, height);
-        this.loadImages(["./images/wall.jpg"]);
-    } */
 }
 
 export {BlockObject};

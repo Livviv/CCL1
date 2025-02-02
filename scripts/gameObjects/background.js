@@ -8,7 +8,7 @@ class Background extends BaseGameObject {
     yVelocity = 0;
     
     update = function() {
-       /*  console.log(this.x, this.y); */
+      
         this.x += this.xVelocity * global.deltaTime;
         this.htmlElement.style.backgroundPositionX = -this.x + "px";
        

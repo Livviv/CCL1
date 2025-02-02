@@ -14,18 +14,7 @@ function stop(event) {
     }
 }
 
-/* function stop(event) {
-    switch(event.key) {
-        case "d":
-            global.playerObject.xVelocity = 0;
-            break;
-        case "a":
-            global.playerObject.xVelocity = 0;
-            break;   
-    }
-}
- */
 document.addEventListener("keydown", move);
 
-//if you just want to move as long as the player presses a key:
+
 document.addEventListener("keyup", stop);
