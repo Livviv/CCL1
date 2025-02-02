@@ -1,17 +1,22 @@
 const global = {};
 
+function resetGlobals() {
+    global.deltaTime = 0;
+    global.allGameObjects = [];
+    global.playerObject = {};
+    global.backgroundShift = 0;
+    global.backgroundMaxShift = -1000;
+    global.gravityForce = 9.81;
+    global.pixelToMeter = 100;
+    global.gameRunning = false;
+    global.currentScore = 0;
+}
+
 global.canvas = document.querySelector("#canvas");
 global.ctx = canvas.getContext("2d");
 global.prevTotalRunningTime = 0;
-global.deltaTime = 0;
-global.allGameObjects = [];
-global.playerObject = {};
-global.backgroundShift = 0;
-global.backgroundMaxShift = -600;
-global.gravityForce = 9.81;
-global.pixelToMeter = 100;
-
-global.rightMoveTrigger;
+global.background = document.querySelector("#background"); // Initialize the background element for the game
+resetGlobals();
 
 global.getCanvasBounds = function () {
     let bounds =  {
@@ -22,6 +27,11 @@ global.getCanvasBounds = function () {
     }
 
     return bounds;
+}
+
+global.updateScoreDisplay = function () {
+    let scoreDisplay = document.getElementById("scoreDisplay");
+    scoreDisplay.innerHTML = "Score: " +global.currentScore;
 }
 
 global.checkCollisionWithAnyOther = function (givenObject) {
@@ -36,7 +46,6 @@ global.checkCollisionWithAnyOther = function (givenObject) {
         }
     }
 }
-
 
 global.detectBoxCollision = function (gameObject1, gameObject2) {
     let box1 = gameObject1.getBoxBounds();
@@ -53,5 +62,9 @@ global.detectBoxCollision = function (gameObject1, gameObject2) {
     return false;
 }
 
+global.getRandomNum = function (min, max) {
+    return Math.floor(Math.random() * max) + min;
+}
 
-export { global }
+
+export { global, resetGlobals }
